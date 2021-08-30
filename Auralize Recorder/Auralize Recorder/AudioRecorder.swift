@@ -4,7 +4,6 @@
 //
 //  Created by Cristiano Lopes on 26/08/21.
 //
-
 import Foundation
 import SwiftUI
 import Combine
@@ -43,7 +42,7 @@ class AudioRecorder: NSObject, ObservableObject {
         
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-            AVSampleRateKey: 1200,
+            AVSampleRateKey: 44100,
             AVNumberOfChannelsKey: 1,
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue]
         
